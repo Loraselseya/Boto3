@@ -3,7 +3,7 @@ import boto3
 client = boto3.client("ec2")
 
 # Create VPC
-#client.create_vpc(CidrBlock='10.0.0.0/24')
+client.create_vpc(CidrBlock='10.0.0.0/24')
 
 
 # Describe VPC
