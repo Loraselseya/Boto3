@@ -18,4 +18,4 @@ EC2_RESOURCE = boto3.resource('ec2', region_name=AWS_REGION)
 instances = EC2_RESOURCE.instances.all()
 
 for instance in instances:
-    print("EC2 instance {instance.id}")
+    print("EC2 instance",{instance.id})
