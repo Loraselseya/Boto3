@@ -1,6 +1,6 @@
 import boto3
 
-AWS_REGION = "eu-west-2"
+AWS_REGION = "ap-south-1"
 
 ec2_client = boto3.client('ec2', region_name=AWS_REGION)
 
