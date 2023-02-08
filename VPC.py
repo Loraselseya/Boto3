@@ -31,7 +31,7 @@ x=client.describe_security_groups(
         {
             'Name': 'group-id',
             'Values': [
-                'sg-045c04b94e7a4f7cb'
+                'sg-0534e423963ddeb30'
             ]
         },
     ],
@@ -40,3 +40,9 @@ x=client.describe_security_groups(
 print(x) 
 
 
+
+# Remove security group
+
+client.delete_security_group(
+    GroupId='sg-096bf8b224f8b1e74'
+)
