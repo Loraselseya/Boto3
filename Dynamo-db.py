@@ -1,3 +1,5 @@
+# Create table
+
 import boto3
 
 AWS_REGION = "ap-south-1"
@@ -41,10 +43,12 @@ table.wait_until_exists()
 print(table.item_count)
 
 
+
 # Creation - Date and time
 
 table = dynamodb.Table('users')
 print(table.creation_date_time)
+
 
 
 # Creating new item
@@ -58,3 +62,16 @@ table.put_item(
         'account_type': 'standard_user',
     }
 )
+
+
+
+# Getting new item
+
+response = table.get_item(
+    Key={
+        'username': 'janedoe',
+        'last_name': 'Doe'
+    }
+)
+item = response['Item']
+print(item)
