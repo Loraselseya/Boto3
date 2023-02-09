@@ -39,3 +39,9 @@ table.wait_until_exists()
 
 # Print out some data about the table.
 print(table.item_count)
+
+
+# Creation - Date and time
+
+table = dynamodb.Table('users')
+print(table.creation_date_time)
