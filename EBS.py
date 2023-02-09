@@ -61,7 +61,7 @@ print(json.dumps(
 # Attach EBS
 
 import boto3
-AWS_REGION = "eu-west-2"
+AWS_REGION = "ap-south-1"
 ec2_client = boto3.client('ec2', region_name=AWS_REGION)
 
 ec2_client.attach_volume(
@@ -74,7 +74,7 @@ ec2_client.attach_volume(
 # Detach EBS
 
 import boto3
-AWS_REGION = "eu-west-2"
+AWS_REGION = "ap-south-1"
 ec2_client = boto3.client('ec2', region_name=AWS_REGION)
 
 
