@@ -13,7 +13,6 @@ response = iam.create_user(
 print(response)
 
 
-
 # List IAM Users
 
 import boto3
