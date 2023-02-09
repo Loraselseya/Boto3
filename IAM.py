@@ -9,7 +9,6 @@ iam = boto3.client('iam', region_name = AWS_REGION)
 response = iam.create_user(
     UserName='IAM_USER'
 )
-
 print(response)
 
 
