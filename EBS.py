@@ -25,6 +25,7 @@ new_volume = ec2_client.create_volume(
 
 print(f'Created volume ID: {new_volume["VolumeId"]}')
 
+
 # Describe EBS
 import json
 from datetime import date, datetime
