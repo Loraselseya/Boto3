@@ -1,5 +1,4 @@
 # Create table
-
 import boto3
 
 AWS_REGION = "ap-south-1"
@@ -45,14 +44,12 @@ print(table.item_count)
 
 
 # Creation - Date and time
-
 table = dynamodb.Table('users')
 print(table.creation_date_time)
 
 
 
 # Creating new item
-
 table.put_item(
    Item={
         'username': 'john',
@@ -66,7 +63,6 @@ table.put_item(
 
 
 # Getting new item
-
 response = table.get_item(
     Key={
         'username': 'janedoe',

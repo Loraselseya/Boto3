@@ -1,5 +1,4 @@
 # create IAM User
-
 import boto3
 
 # Create IAM client
@@ -14,7 +13,6 @@ print(response)
 
 
 # List IAM Users
-
 import boto3
 
 AWS_REGION = "ap-south-1"
