@@ -1,12 +1,13 @@
 # create IAM User
 import boto3
+AWS_REGION = "ap-south-1"
 
 # Create IAM client
-iam = boto3.client('iam')
+iam = boto3.client('iam', region_name = AWS_REGION)
 
 # Create user
 response = iam.create_user(
-    UserName='IAM_USER_NAME'
+    UserName='IAM_USER'
 )
 
 print(response)
