@@ -45,3 +45,16 @@ print(table.item_count)
 
 table = dynamodb.Table('users')
 print(table.creation_date_time)
+
+
+# Creating new item
+
+table.put_item(
+   Item={
+        'username': 'john',
+        'first_name': 'flake',
+        'last_name': 'johnny',
+        'age': 24,
+        'account_type': 'standard_user',
+    }
+)
