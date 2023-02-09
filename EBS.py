@@ -1,5 +1,4 @@
 # Create EBS
-
 import boto3
 
 AWS_REGION = "ap-south-1"
@@ -27,7 +26,6 @@ new_volume = ec2_client.create_volume(
 print(f'Created volume ID: {new_volume["VolumeId"]}')
 
 # Describe EBS
-
 import json
 from datetime import date, datetime
 import boto3
@@ -59,7 +57,6 @@ print(json.dumps(
 
 
 # Attach EBS
-
 import boto3
 AWS_REGION = "ap-south-1"
 ec2_client = boto3.client('ec2', region_name=AWS_REGION)
@@ -72,7 +69,6 @@ ec2_client.attach_volume(
 
 
 # Detach EBS
-
 import boto3
 AWS_REGION = "ap-south-1"
 ec2_client = boto3.client('ec2', region_name=AWS_REGION)
