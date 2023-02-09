@@ -18,15 +18,9 @@ Pre-requisites
 6.Save the access id and secret key
 
 
-S3
+Cloudwatch
 
-1.Create S3 bucket using Boto3
-
-2.Listing all buckets
-
-3.Uploading files to S3 using Boto3
-
-4.Downloading file from S3 using Boto3
+1.Create Alarm in cloudwatch using Boto3
 
 
 VPC
@@ -64,6 +58,12 @@ EBS Volume
 4.Detach EBS Volume from EC2 instance using Boto3
 
 
-Cloudwatch
+S3
 
-1.Create Alarm in cloudwatch using Boto3
+1.Create S3 bucket using Boto3
+
+2.Listing all buckets
+
+3.Uploading files to S3 using Boto3
+
+4.Downloading file from S3 using Boto3
